@@ -1,0 +1,14 @@
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/bin/Debug/net8.0/Console_Inventory_System
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/bin/Debug/net8.0/Console_Inventory_System.deps.json
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/bin/Debug/net8.0/Console_Inventory_System.runtimeconfig.json
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/bin/Debug/net8.0/Console_Inventory_System.dll
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/bin/Debug/net8.0/Console_Inventory_System.pdb
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.GeneratedMSBuildEditorConfig.editorconfig
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.AssemblyInfoInputs.cache
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.AssemblyInfo.cs
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.csproj.CoreCompileInputs.cache
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.dll
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/refint/Console_Inventory_System.dll
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.pdb
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.genruntimeconfig.cache
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/ref/Console_Inventory_System.dll
