@@ -12,3 +12,4 @@
 /home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.pdb
 /home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.genruntimeconfig.cache
 /home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/ref/Console_Inventory_System.dll
+/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Foundations_of_Coding_Full-Stack/Console_Inventory_System/obj/Debug/net8.0/Console_Inventory_System.sourcelink.json
