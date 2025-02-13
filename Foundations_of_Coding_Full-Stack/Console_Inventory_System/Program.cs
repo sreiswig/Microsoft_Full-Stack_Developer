@@ -9,12 +9,34 @@ DataTable CreateInventoryTable() {
   return table;
 }
 
+void PrintTable(DataTable table) {
+  Console.WriteLine(table.Rows.Count + " Rows in the Inventory System");
+  int currentRow = 0;
+  foreach(DataRow dataRow in table.Rows) {
+    Console.Write(currentRow);
+    foreach(var item in dataRow.ItemArray) {
+      Console.Write(" " + item);
+    }
+    currentRow++;
+    Console.WriteLine();
+  }
+}
+
 void AddInventoryRow(String Product, String Price, String Quantity, DataTable table) {
   DataRow row = table.NewRow();
   row["Product Name"] = Product;
   row["Price"] = Price;
   row["Stock Quantity"] = Quantity;
   table.Rows.Add(row);
+  PrintTable(table);
+}
+
+void UpdateInventoryRow(String Product, String Price, String Quantity, int index, DataTable table) {
+  
+}
+
+void DeleteInventoryRow(int index, DataTable table) {
+  table.Rows.RemoveAt(index);
 }
 
 String MainMenu() {
@@ -27,8 +49,8 @@ String MainMenu() {
 }
 
 String UserInput = "";
+DataTable InventoryTable = CreateInventoryTable();
 do {
-  DataTable InventoryTable = CreateInventoryTable();
   UserInput = MainMenu();
   switch (UserInput.ToLower())
   {
@@ -43,9 +65,9 @@ do {
         String Quantity = Console.ReadLine();
         AddInventoryRow(Product, Price, Quantity, InventoryTable);
 
-        Console.WriteLine("Continue Adding? Y/N");
+        Console.WriteLine("Continue Adding? Y");
         String Continue = Console.ReadLine();
-        if (Continue.ToLower() == "n") { break; }
+        if (Continue.ToLower() != "y") { break; }
       }
       Console.ResetColor();
       break;
@@ -53,20 +75,50 @@ do {
     case "update":
       bool IsUpdating = true;
       Console.ForegroundColor = ConsoleColor.Yellow;
+      while (true) {
+        PrintTable(InventoryTable);
+        Console.WriteLine("Enter the row number to update");
+        String input = Console.ReadLine();
+        if (Int32.TryParse(input, out int j)) {
+          Console.WriteLine("Enter Updated Product");
+          String Product = Console.ReadLine();
+          Console.WriteLine("Enter Updated Price");
+          String Price = Console.ReadLine();
+          Console.WriteLine("Enter Updated Stock");
+          String Stock = Console.ReadLine();
+
+        } else {
+          Console.WriteLine("Not a valid row number");
+        }
+        Console.WriteLine("Continue Updating? Y");
+        String Continue = Console.ReadLine();
+        if (Continue.ToLower() != "y") { break; }
+      }
       Console.ResetColor();
       break;
     
     case "remove":
       bool IsRemoving = true;
       Console.ForegroundColor = ConsoleColor.Red;
+      while (true) {
+        PrintTable(InventoryTable);
+        Console.WriteLine("Enter the number of the row to remove");
+        String input = Console.ReadLine();
+        if (Int32.TryParse(input, out int j)) {
+          Console.WriteLine("Deleting Row: " + j);
+          DeleteInventoryRow(j, InventoryTable);
+        } else {
+          Console.WriteLine("Not a valid row number");
+        }
+        Console.WriteLine("Continue Removing? Y");
+        String Continue = Console.ReadLine();
+        if (Continue.ToLower() != "y") { break; }
+      }
       Console.ResetColor();
       break;
     
     case "view":
-      Console.WriteLine(InventoryTable.Rows.Count);
-      for (int i = 0; i < InventoryTable.Rows.Count; i++) {
-        Console.WriteLine(InventoryTable.Rows[i]);
-      }
+      PrintTable(InventoryTable);
       break;
 
     case "help":
