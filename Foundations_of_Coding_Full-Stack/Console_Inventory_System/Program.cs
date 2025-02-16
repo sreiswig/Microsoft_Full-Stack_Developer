@@ -32,7 +32,9 @@ void AddInventoryRow(String Product, String Price, String Quantity, DataTable ta
 }
 
 void UpdateInventoryRow(String Product, String Price, String Quantity, int index, DataTable table) {
-  
+    table.Rows[index]["Product Name"] = Product;
+    table.Rows[index]["Price"] = Price;
+    table.Rows[index]["Stock Quantity"] = Quantity;
 }
 
 void DeleteInventoryRow(int index, DataTable table) {
@@ -67,7 +69,10 @@ do {
 
         Console.WriteLine("Continue Adding? Y");
         String Continue = Console.ReadLine();
-        if (Continue.ToLower() != "y") { break; }
+        if (Continue.ToLower() != "y") { 
+          PrintTable(InventoryTable);
+          break; 
+        }
       }
       Console.ResetColor();
       break;
@@ -86,13 +91,17 @@ do {
           String Price = Console.ReadLine();
           Console.WriteLine("Enter Updated Stock");
           String Stock = Console.ReadLine();
+          UpdateInventoryRow(Product, Price, Stock, j, InventoryTable);
 
         } else {
           Console.WriteLine("Not a valid row number");
         }
         Console.WriteLine("Continue Updating? Y");
         String Continue = Console.ReadLine();
-        if (Continue.ToLower() != "y") { break; }
+        if (Continue.ToLower() != "y") {
+          PrintTable(InventoryTable);
+          break; 
+        }
       }
       Console.ResetColor();
       break;
@@ -112,7 +121,10 @@ do {
         }
         Console.WriteLine("Continue Removing? Y");
         String Continue = Console.ReadLine();
-        if (Continue.ToLower() != "y") { break; }
+        if (Continue.ToLower() != "y") {
+          PrintTable(InventoryTable);
+          break; 
+        }
       }
       Console.ResetColor();
       break;
