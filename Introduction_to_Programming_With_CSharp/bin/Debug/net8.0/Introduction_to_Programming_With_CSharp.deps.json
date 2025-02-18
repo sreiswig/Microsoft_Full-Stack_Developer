@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Introduction_to_Programming_With_CSharp/1.0.0": {
+        "runtime": {
+          "Introduction_to_Programming_With_CSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Introduction_to_Programming_With_CSharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
