@@ -78,7 +78,11 @@ class LibraryManager
                     if (books.ContainsKey(searchBook))
                     {
                         bool isBorrowed = books[searchBook];
-                        Console.WriteLine($"Book '{searchBook}' is available. Checked out: {isBorrowed}");
+                        if (isBorrowed) {
+                          Console.WriteLine($"Book '{searchBook}' is part of the collection but currently checked out.");
+                        } else {
+                          Console.WriteLine($"Book '{searchBook}' is available.");
+                        }
                     }
                     else
                     {
