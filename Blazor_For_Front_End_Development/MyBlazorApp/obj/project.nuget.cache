@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aBI3yBsXewI=",
+  "dgSpecHash": "f9oujyfgjiI=",
   "success": true,
   "projectFilePath": "/home/sam/Documents/Coursera/Microsoft_Full-Stack_Developer/Blazor_For_Front_End_Development/MyBlazorApp/MyBlazorApp.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "/home/sam/.nuget/packages/microsoft.jsinterop.webassembly/8.0.11/microsoft.jsinterop.webassembly.8.0.11.nupkg.sha512",
     "/home/sam/.nuget/packages/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
     "/home/sam/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.11/microsoft.net.sdk.webassembly.pack.8.0.11.nupkg.sha512",
+    "/home/sam/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/sam/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/sam/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.11/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.11.nupkg.sha512"
   ],
